@@ -1,12 +1,3 @@
-(defvar *welcome-message*  (format t "Hello, my name is ~a" "Nick"))
-(with-open-file 
-    (out "goldenfile.txt"
-         :direction :output
-         :if-exists :supersede)
-    (WITH-STANDARD-IO-SYNTAX 
-        (format out "hello, world!")))
- 
-
 (defun save-file (filename txt)
   (with-open-file (out filename
                    :direction :output
